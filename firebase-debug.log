@@ -1,0 +1,107 @@
+[debug] [2018-07-31T02:47:17.220Z] ----------------------------------------------------------------------
+[debug] [2018-07-31T02:47:17.247Z] Command:       /usr/local/Cellar/node/9.3.0_1/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-07-31T02:47:17.248Z] CLI Version:   4.0.1
+[debug] [2018-07-31T02:47:17.248Z] Platform:      darwin
+[debug] [2018-07-31T02:47:17.248Z] Node Version:  v9.3.0
+[debug] [2018-07-31T02:47:17.321Z] Time:          Mon Jul 30 2018 22:47:17 GMT-0400 (AST)
+[debug] [2018-07-31T02:47:17.321Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-31T02:47:17.461Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-31T02:47:17.461Z] > authorizing via signed-in user
+[debug] [2018-07-31T02:47:17.464Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-31T02:47:17.464Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/076yG4vcN-O0Carsu0v0t0B3z1hqywvfDynR__O5HEk',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Jul 30 2018 22:47:17 GMT-0400 (AST)
+[debug] [2018-07-31T02:47:18.181Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-31T02:47:18.246Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/final-diplomado-cristy  
+  
+ Mon Jul 30 2018 22:47:18 GMT-0400 (AST)
+[debug] [2018-07-31T02:47:18.861Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-31T02:47:18.862Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/final-diplomado-cristy/tokens  
+  
+ Mon Jul 30 2018 22:47:18 GMT-0400 (AST)
+[debug] [2018-07-31T02:47:19.429Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'final-diplomado-cristy'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-07-31T02:47:20.204Z] TypeError: no files or directories specified
+    at Object.module.exports (/usr/local/lib/node_modules/firebase-tools/node_modules/tar/lib/create.js:20:11)
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/prepareUpload.js:25:6)
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/deploy/hosting/deploy.js:29:10)
+    at _chain (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:26:38)
+    at /usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:86:14
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-07-31T02:47:47.266Z] ----------------------------------------------------------------------
+[debug] [2018-07-31T02:47:47.270Z] Command:       /usr/local/Cellar/node/9.3.0_1/bin/node /usr/local/bin/firebase serve
+[debug] [2018-07-31T02:47:47.271Z] CLI Version:   4.0.1
+[debug] [2018-07-31T02:47:47.271Z] Platform:      darwin
+[debug] [2018-07-31T02:47:47.271Z] Node Version:  v9.3.0
+[debug] [2018-07-31T02:47:47.286Z] Time:          Mon Jul 30 2018 22:47:47 GMT-0400 (AST)
+[debug] [2018-07-31T02:47:47.286Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-31T02:47:47.339Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-31T02:47:47.339Z] > authorizing via signed-in user
+[debug] [2018-07-31T02:47:47.344Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/final-diplomado-cristy  
+  
+ Mon Jul 30 2018 22:47:47 GMT-0400 (AST)
+[debug] [2018-07-31T02:47:47.877Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-31T02:47:47.878Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/final-diplomado-cristy/tokens  
+  
+ Mon Jul 30 2018 22:47:47 GMT-0400 (AST)
+[debug] [2018-07-31T02:47:48.380Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-31T02:47:48.382Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/final-diplomado-cristy  
+  
+ Mon Jul 30 2018 22:47:48 GMT-0400 (AST)
+[debug] [2018-07-31T02:47:48.866Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/calebpenacruz/Desktop/firebase'...
+[info] 
+[debug] [2018-07-31T02:47:48.870Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/366100902159/clients/_:getWebAppConfig  
+  
+ Mon Jul 30 2018 22:47:48 GMT-0400 (AST)
+[debug] [2018-07-31T02:47:49.522Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-07-31T02:52:58.020Z] ----------------------------------------------------------------------
+[debug] [2018-07-31T02:52:58.024Z] Command:       /usr/local/Cellar/node/9.3.0_1/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-07-31T02:52:58.025Z] CLI Version:   4.0.1
+[debug] [2018-07-31T02:52:58.025Z] Platform:      darwin
+[debug] [2018-07-31T02:52:58.025Z] Node Version:  v9.3.0
+[debug] [2018-07-31T02:52:58.040Z] Time:          Mon Jul 30 2018 22:52:58 GMT-0400 (AST)
+[debug] [2018-07-31T02:52:58.040Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-31T02:52:58.101Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-31T02:52:58.102Z] > authorizing via signed-in user
+[debug] [2018-07-31T02:52:58.106Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/final-diplomado-cristy  
+  
+ Mon Jul 30 2018 22:52:58 GMT-0400 (AST)
+[debug] [2018-07-31T02:52:58.775Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-31T02:52:58.776Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/final-diplomado-cristy/tokens  
+  
+ Mon Jul 30 2018 22:52:58 GMT-0400 (AST)
+[debug] [2018-07-31T02:52:59.232Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'final-diplomado-cristy'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-07-31T02:52:59.914Z] TypeError: no files or directories specified
+    at Object.module.exports (/usr/local/lib/node_modules/firebase-tools/node_modules/tar/lib/create.js:20:11)
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/prepareUpload.js:25:6)
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/deploy/hosting/deploy.js:29:10)
+    at _chain (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:26:38)
+    at /usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:86:14
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+
+    <title>Crear denuncias</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <!-- Mi estilo -->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">CIUDADA.NO |</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul style="margin-top:19px;" class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+
+            <li class="nav-item" id="onlyUsers">
+              <a class="nav-link" href="crear-denuncia.html">Crear denuncia</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="map.html">Mapa</a>
+            </li>
+  
+             
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mi cuenta</a>
+          </li>  
+      </ul> 
+
+        <ul style="margin-top:19px;">          
+            <li class="navbar-nav mt-2 mt-md-0" id="usarioAnonimo">
+                <a style="color:#3d9df1; font-size:20px;" class="nav-link" href="log-in-ingresar.html">Ingresar</a>
+                <a style="color:#f1af3d; font-size:20px;" class="nav-link" href="log-in-crear.html">| Crear cuenta</a>
+            </li>
+
+            <li class="navbar-nav mt-2 mt-md-0" id="usuarioLogueado">
+                <a id="btnSalir" style="color:#ff8686; font-size:20px;" class="nav-link" href="index.html">Salir</a>
+               
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Carousel-->
+    <!--Carousel-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img class="first-slide" src="img/adult-african-descent-american-1061579.jpg" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption d-none d-md-block text-left">
+                <h1>Desde cualquier punto</h1>
+                <p>Escribe tu denuncia desde tu movil.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="img/adult-beautiful-caucasian-914931.jpg" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Un ciudadano responsable</h1>
+                <p> Denuncia lo que ves, contribuye a la paz de tu ciudad.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="img/adult-beautiful-blond-879143.jpg" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption d-none d-md-block text-right">
+                <h1>Ya no tienes que llamar</h1>
+                <p>Para denunciar una situacion hazlo desde tu movil</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+    <!--Termina carousel-->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">      
+    
+     <div class="row">
+            <div class="col-md-12">
+                <h2 class="display-4 newHeading"> Listado de denuncias <span class="text-muted"></span></h2>
+                </div>
+        </div>
+          
+
+      <!-- START THE FEATURETTES -->
+      <div id="denuncias">
+        <table class="table table-striped" id="listadeDeDenuncias">
+
+        </table>
+      </div>
+
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div> <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="crear-denuncia-app.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+         $(document).ready(()=>{
+          $('#btnSalir').on("click", ()=>{       
+            Desloguear();     
+            });
+
+          getUsuario();
+          console.log(usuario);
+          if ( usuario!= null) {
+            $('#usarioAnonimo').addClass("d-none");
+           
+          }
+           else {
+            $('#usuarioLogueado').addClass("d-none");
+
+           }           
+        })   
+    
+    </script>
+
+
+  </body>
+
+</html>
